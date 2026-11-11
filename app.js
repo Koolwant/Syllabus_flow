@@ -1,7 +1,8 @@
 // SyllabusFlow — Application UI & Interactive Learning Map
 import { store } from './state.js';
-import { computeGraphLayout, getCriticalPath, getDependencyPath, makeBezierPath } from './graph/layout.js';
-import { parseSyllabusText, SAMPLE_SYLLABUS } from './parser/syllabus-parser.js';
+import { computeGraphLayout, getCriticalPath, getDependencyPath, makeBezierPath } from './layout.js';
+import { parseSyllabusText, SAMPLE_SYLLABUS } from './syllabus-parser.js';
+
 
 const app = document.getElementById('app');
 let mapTransform = { x: 32, y: 28, scale: 0.8 };
